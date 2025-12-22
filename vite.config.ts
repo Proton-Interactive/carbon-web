@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/carbon-rblx.site/",
+  base: "/carbon-web/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
