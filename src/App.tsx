@@ -20,7 +20,7 @@ import { FileStructure } from "./pages/docs/core-concepts/FileStructure";
 import { Syncing } from "./pages/docs/core-concepts/Syncing";
 import { IgnorePatterns } from "./pages/docs/core-concepts/IgnorePatterns";
 import { CliCommands } from "./pages/docs/reference/CliCommands";
-import { PluginApi } from "./pages/docs/reference/PluginApi";
+import { Changelog } from "./pages/docs/Changelog";
 
 function LandingPage() {
   return (
@@ -85,8 +85,9 @@ function AnimatedRoutes() {
 
           <Route path="reference">
             <Route path="cli-commands" element={<CliCommands />} />
-            <Route path="plugin-api" element={<PluginApi />} />
           </Route>
+
+          <Route path="changelog" element={<Changelog />} />
         </Route>
 
         {/* Redirect legacy docs URLs or 404s */}

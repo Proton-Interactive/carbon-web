@@ -4,7 +4,6 @@ export function FileStructure() {
   return (
     <>
       <h1>File Structure</h1>
-      <p>Learn how to organize your files for optimal syncing.</p>
       <p>
         <em>(Documentation coming soon)</em>
       </p>

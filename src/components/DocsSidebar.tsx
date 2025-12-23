@@ -77,9 +77,7 @@ export function DocsSidebar() {
               <SidebarLink to="/docs/reference/cli-commands">
                 CLI Commands
               </SidebarLink>
-              <SidebarLink to="/docs/reference/plugin-api">
-                Plugin API
-              </SidebarLink>
+              <SidebarLink to="/docs/changelog">Changelog</SidebarLink>
             </ul>
           </div>
         </nav>

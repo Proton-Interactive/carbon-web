@@ -8,9 +8,7 @@ export function Introduction() {
         Introduction to <span className="gradient-text">Carbon</span>
       </h1>
       <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-        Carbon is a seamless Roblox script synchronization tool based on Silicon
-        designed to bridge the gap between your local development environment and
-        Roblox Studio without the hassle.
+        In this introduction I will give a few reasons on why you should choose Carbon as your script sync tool and how to install it.
       </p>
 
       <div className="my-8 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg flex gap-4 items-start">
@@ -21,17 +19,16 @@ export function Introduction() {
           <h4 className="text-blue-400 font-bold mb-1">Note</h4>
           <p className="text-sm text-gray-300 m-0">
             Carbon is currently in beta. Please report any issues you encounter on
-            our GitHub repository.
+            our GitHub repository or in our Discord server.
           </p>
         </div>
       </div>
 
       <h2>Why Carbon?</h2>
       <p>
-        Developing on Roblox often involves copy-pasting scripts or using clunky
-        plugins. Carbon solves this by watching your local files and automatically
-        syncing changes to Roblox Studio in real-time. It allows you to use
-        professional tools like Zed and Git while working on Roblox projects.
+        Developing on Roblox with your own IDE often involves copy-pasting scripts or using clunky
+        plugins. Carbon solves this by making you only have to run a simple command to import or export from Studio. It allows you to use
+        professional tools like Visual Studio Code, Zed, or Git while working on Roblox projects.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 not-prose">
@@ -41,7 +38,7 @@ export function Introduction() {
           </div>
           <h3 className="text-white font-bold mb-2 text-lg">Fast Sync</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Simple and fast updates as you save your files. Just one click and
+            Simple and fast updates as you import or export, no making place files. Just one command and
             your changes are synced instantly.
           </p>
         </div>
@@ -51,8 +48,8 @@ export function Introduction() {
           </div>
           <h3 className="text-white font-bold mb-2 text-lg">IDE Support</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Currently, Carbon only supports Zed offically for the extension.
-            However the Python script supports most, if not all text editors.
+            Currently, Carbon supports all IDEs / Text Editors. There is planned extensions for VSCode, Zed, and more
+            for a more integrated experience.
           </p>
         </div>
       </div>

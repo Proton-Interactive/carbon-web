@@ -1,10 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronRight } from "lucide-react";
 
 const MotionLink = motion(Link);
 
 export function Hero() {
+  const navigate = useNavigate();
+  const handleChangelogClick = (e: any) => {
+    // allow modified clicks (ctrl/cmd/middle click) to open in a new tab
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0)
+      return;
+    e.preventDefault();
+    try {
+      navigate("/docs/changelog");
+    } catch (err) {
+      window.location.href = "/docs/changelog";
+    }
+  };
   return (
     <section className="relative pt-32 pb-12 lg:pt-48 lg:pb-20 overflow-hidden">
       <div className="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-[-1]">
@@ -37,9 +49,8 @@ export function Hero() {
         </h1>
 
         <p className="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48">
-          Forget complex setups. Carbon connects your editor to Roblox Studio
-          instantly. Just install the plugin for Roblox and Zed, and you're
-          ready to code.
+          Forget those complex setups. Carbon connects your editor to Roblox
+          Studio almost instantly.
         </p>
 
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -51,6 +62,17 @@ export function Hero() {
           >
             Get Started
             <ArrowRight className="ml-2 -mr-1 w-5 h-5" />
+          </MotionLink>
+
+          <MotionLink
+            to="/docs/changelog"
+            onClick={handleChangelogClick}
+            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white/10 hover:border-blue-500 hover:text-blue-400 focus:ring-4 focus:ring-blue-900 transition-all"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            Changelog
+            <ChevronRight className="ml-2 -mr-1 w-5 h-5" />
           </MotionLink>
         </div>
       </div>

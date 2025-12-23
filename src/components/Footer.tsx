@@ -23,7 +23,7 @@ export function Footer() {
           </li>
           <li>
             <a
-              href="https://discord.gg/apvdWKBVfS"
+              href="https://discord.gg/EKPd3YscEs"
               className="mr-4 hover:underline md:mr-6"
             >
               Support Server
