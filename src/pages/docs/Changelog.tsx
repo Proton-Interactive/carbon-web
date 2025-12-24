@@ -18,7 +18,8 @@ const releases: Release[] = [
     changes: [
       "VSC and Zed Extensions",
       "Linux and MacOS support",
-      "Roblox Plugin made in roblox-ts?"
+      "Roblox Plugin made in roblox-ts?",
+      "Add roblox-ts compiling and exporting support within the CLI?"
     ],
   },
   {
