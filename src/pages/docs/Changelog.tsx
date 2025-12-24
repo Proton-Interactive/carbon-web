@@ -17,7 +17,8 @@ const releases: Release[] = [
     summary: "Work in progress — items planned for upcoming releases.",
     changes: [
       "VSC and Zed Extensions",
-      "Linux and MacOS support"
+      "Linux and MacOS support",
+      "Roblox Plugin made in roblox-ts?"
     ],
   },
   {
