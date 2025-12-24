@@ -38,7 +38,7 @@ export function Hero() {
             New
           </span>
           <span className="text-sm font-medium">
-            Carbon v2.0.0 is now available
+            Carbon v2.0.1 is now available
           </span>
           <ChevronRight className="ml-2 w-5 h-5" />
         </motion.a>
