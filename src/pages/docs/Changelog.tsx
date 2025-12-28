@@ -17,17 +17,23 @@ const releases: Release[] = [
     summary: "Work in progress — items planned for upcoming releases.",
     changes: [
       "VSC and Zed Extensions",
-      "Linux and MacOS support",
-      "Roblox Plugin made in roblox-ts?",
-      "Add roblox-ts compiling and exporting support within the CLI?"
+      "Linux support",
+      "Roblox Plugin made in roblox-ts and roact?",
+      "Add roblox-ts compiling and exporting support within the CLI?",
     ],
+  },
+  {
+    id: "v2.1.0",
+    version: "v2.1.0",
+    date: "",
+    summary: "MacOS Support",
+    changes: ["Added MacOS support for when using the install-plugin command"],
   },
   {
     id: "2.0.1",
     version: "v2.0.1",
     date: "2025-12-22",
-    summary:
-      "First major release with performance and reliability",
+    summary: "First major release with performance and reliability",
     changes: [
       "Rewrote codebase in Rust from Python",
       "Transformed the server to a CLI tool for easier integration between different editors and IDEs.",
